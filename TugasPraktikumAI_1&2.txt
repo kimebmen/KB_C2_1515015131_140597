@@ -1,0 +1,37 @@
+Nama		: R.H. Kimebmen Simbolon
+NIM		: 1515015131
+Praktikan	: C2 / Kecerdasan Buatan
+Tugas		: Kerjakan Tugas Modul 2
+		  Nomer 1 & 2 (format .txt)
+1.
+a)	orang(dian). 		 //dian adalah nama orang.
+b)	mobil(atoz). 		 //atoz adalah nama/merk mobil.
+c)	suka(dian,atoz).	 //Di atas telah dideklarasikan bahwa dian adalah nama orang dan 
+				   atos adalah nama/merk mobil. Jadi artinya adalah dian menyukai 
+				   mobil bernama/bermerk atoz.
+d)	dijual(atoz).		 // mobil bernama/bermerk atoz dijual.
+e)	dapat_membeli(X,Y):-     // Kondisi dapat_membeli dapat terpenuhi jika X dan Y betul. Syaratnya yang harus terpenuhi adalah
+	orang(X),		    X adalah orang dan 
+	mobil(Y),		    Y adalah mobil dan	
+	suka(X,Y),   		    X suka Y, artinya orang yang menyukai mobil, dan	
+	dijual(Y). 		    Y adalah mobil, jadi mobil yang dijual.				
+f)	suka(_,Apa).		  // _ adalah X(orang) tapi diabaikan atau tidak ditampilkan dan Apa(Y).
+				     artinya adalah akan
+				     menampilkan apa yang disuka oleh orang(X)
+				     yang sesuai dengan suka(Y), jadi suka(_,Apa)
+				     atau suka(X,Y) tapi X diabaikan atau tidak ditampilkan.
+
+2.
+a) 	hoby(ricky,catur)
+b)	sifat(embang,pemalas)
+c)	makan(yusida,vegetarian)
+d)	pandai(kusdiar,gitar)
+e)	mobil(sadek,merah).   
+	mobil(merah,sadek).
+	mobil(sadek,bmw).
+f)	orang(awan,piano)
+	orang(awan,pontianak)
+	orang(pontianak,jawa)	 	
+g)	baik(orang,sifat)if(penyayang,dermawan)
+h)	pintar(orang,nilaitinggi) if pintar(matematika,nilaitinggi);pintar(ipa,nilaitinggi);
+	pintar(ips,nilaitinggi).
