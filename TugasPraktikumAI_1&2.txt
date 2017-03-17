@@ -20,18 +20,21 @@ f)	suka(_,Apa).		  // _ adalah X(orang) tapi diabaikan atau tidak ditampilkan da
 				     menampilkan apa yang disuka oleh orang(X)
 				     yang sesuai dengan suka(Y), jadi suka(_,Apa)
 				     atau suka(X,Y) tapi X diabaikan atau tidak ditampilkan.
-
+s
 2.
 a) 	hoby(ricky,catur)
 b)	sifat(embang,pemalas)
 c)	makan(yusida,vegetarian)
 d)	pandai(kusdiar,gitar)
-e)	mobil(sadek,merah).   
+e)	mobil(sadek,merah).    //mobil(merah, Sadek, BMW).
 	mobil(merah,sadek).
 	mobil(sadek,bmw).
-f)	orang(awan,piano)
+f)	orang(awan,piano)	//pianis(Awan, Pontianak, Jawa).
 	orang(awan,pontianak)
 	orang(pontianak,jawa)	 	
-g)	baik(orang,sifat)if(penyayang,dermawan)
-h)	pintar(orang,nilaitinggi) if pintar(matematika,nilaitinggi);pintar(ipa,nilaitinggi);
-	pintar(ips,nilaitinggi).
+g)	baik(orang,sifat):-(penyayang,dermawan) 						//baik(orang):-penyayang(orang),dermawan(orang).
+h)	pintar(orang,nilaitinggi):- pintar(matematika,nilaitinggi);pintar(ipa,nilaitinggi); 
+	pintar(ips,nilaitinggi). 								// pintar(orang) :- nilai(matematika,{int=80};
+															nilai(ipa,{int=80};
+															nilai(ips,{int=80};
+i) 	pasti(orang,mati).	
